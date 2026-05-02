@@ -44,7 +44,9 @@ async def test_binance_checker_timeout(settings):
     fake_ws.__aexit__ = AsyncMock(return_value=False)
 
     with patch("app.checkers.binance.websockets.connect", return_value=fake_ws):
-        with patch("app.checkers.binance.asyncio.wait_for", side_effect=asyncio.TimeoutError()):
+        with patch(
+            "app.checkers.binance.asyncio.wait_for", side_effect=asyncio.TimeoutError()
+        ):
             checker = BinanceChecker(settings)
             result = await checker.check()
 
