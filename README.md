@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.111-green)
-![CI](https://img.shields.io/github/actions/workflow/status/your-org/polymarket-bot-reliability-monitor/ci.yml?label=CI)
+![CI](https://img.shields.io/github/actions/workflow/status/Arcan17/polymarket-bot-reliability-monitor/ci.yml?label=CI&logo=github)
 
 A standalone production-ready service that continuously monitors the external
 infrastructure relied upon by the Polymarket trading bot:
